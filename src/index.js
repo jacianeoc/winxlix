@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';import './styles/reset.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
+import './styles/index.css'; import './styles/reset.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import registerVideo from './pages/register/Video';
 import registerCategory from './pages/register/Category';
@@ -17,16 +17,16 @@ import registerCategory from './pages/register/Category';
 const Page404 = () => (<div>page 404</div>)
 
 ReactDOM.render(
-  <Router>
+    <Router>
 
-    <Switch>
-      <Route path="/" component={Home} exact/>
-      <Route path="/register/Video" component={registerVideo} exact />
-      <Route path="/register/Category" component={registerCategory} exact />
-      <Route path= '*' component={Page404} />
-      
-    </Switch>
-  </Router>,
-  document.getElementById('root')
+        <Switch>
+            <Route path="/" component={Home} exact />
+            <Route path="/register/Video" component={registerVideo} exact />
+            <Route path="/register/Category" component={registerCategory} exact />
+            <Route path='*' component={Page404} />
+
+        </Switch>
+    </Router>,
+    document.getElementById('root')
 );
 

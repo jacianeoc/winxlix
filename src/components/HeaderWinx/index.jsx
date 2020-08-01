@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 const HeaderWinx = styled.header`
     display: flex;
+    justify-content: center;
     background-color: var(--black);
     justify-items:center;
     justify-content: space-between;
@@ -14,6 +15,7 @@ const HeaderWinx = styled.header`
 
     @media(max-width:780px){
         & > ${LogoWinx}{
+            justify-content: center;
             text-align: center;
             height: 35px;
         }
@@ -36,6 +38,5 @@ const HeaderWinx = styled.header`
     }
     
 `;
-
 
 export default HeaderWinx;

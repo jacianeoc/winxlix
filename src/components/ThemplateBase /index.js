@@ -18,6 +18,7 @@ const Main = styled.main`
         font-size: 25rem;
         font-weight: bold;
     }
+    
 
 `;
 

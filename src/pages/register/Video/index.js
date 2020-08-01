@@ -3,15 +3,19 @@ import ThemplateBase from '../../../components/ThemplateBase ';
 import { Link } from 'react-router-dom';
 
 
-function RegisterVideo (){
-    return(
+function RegisterVideo() {
+    return (
 
         <ThemplateBase>
-        <h1>CADASTRAR VIDEO</h1>
-        <Link to='/register/Category'> Registar Categoria</Link>
+            <h1>Cadastro de Video</h1>
+
+            <Link to="/register/Category">
+                Cadastrar Categoria
+            </Link>
+
         </ThemplateBase>
-        
-    ); 
+
+    );
 };
 
 export default RegisterVideo;
